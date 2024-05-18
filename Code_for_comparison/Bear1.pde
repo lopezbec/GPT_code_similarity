@@ -1,49 +1,56 @@
-//Setting up window
-size(700,500); //Making the window size 700x500
-strokeWeight(0);
+//window size setup
+void setup(){
+  size(900,600);
+}
+//basic body parts of bear
+void draw(){
+stroke(0);
+fill(255,183,243);
+rect(60,100,570,350);
+fill(219,183,255);
+triangle(800,215,800,135,860,175);
+fill(81,71,242);
+circle(720,70,50);
+fill(25,150,250);
+circle(720,70,30);
+fill(25,218,250);
+circle(720,175,200);
+//noStroke allows us to combine shapes with no visible lines
+noStroke();
+fill(25,250,165);
+rect(110,450,115,140);
+fill(25,250,165);
+triangle(225,590,225,555,260,590);
+fill(25,250,165);
+rect(470,450,115,140);
+fill(25,250,165);
+triangle(585,590,585,555,620,590);
+fill(110,25,250);
+circle(20,196,25);
+fill(110,25,250);
+triangle(15,185,20,210,60,150);
+fill(110,25,250);
+triangle(20,210,60,150,60,180);
+fill(0);
+circle(776,203,80);
+fill(25,218,250);
+circle(776,200,80);
 
-//Bear's Body/Legs
-fill(57,51,39); //Making the color for the rectangle body
-rect(84,75,420,250); //Making the rectangle body
-rect(140,325,84,125); //Making the rectangle for the left leg
-rect(364,325,84,125); //Making the rectangle for the right leg
-beginShape(); 
-vertex(224,425);vertex(252,450);vertex(224,450); //Making the triangle toes on the left leg
-endShape();
-beginShape();
-vertex(448,425);vertex(476,450);vertex(448,450); //Making the triangle toes on the right leg
-endShape();
-fill(162,109,8); //Creating the color for the triangles on the bear's back
-beginShape();
-vertex(84,150);vertex(140,100);vertex(196,150);vertex(252,100);vertex(308,150);
-vertex(364,100);vertex(420,150);vertex(504,75);vertex(84,75); //Creating the triangle shape on its back
-endShape(CLOSE);
+//small details on bear
+stroke(0);
+fill(227,25,250);
+circle(860,175,20);
+fill(255);
+circle(770,130,20);
+//lines on back
+line(540,180,630,100);
+line(540,180,480,140);
+line(480,140,420,190);
+line(420,190,360,150);
+line(360,150,300,200);
+line(300,200,240,160);
+line(240,160,180,210);
+line(180,210,120,170);
+line(120,170,60,220);
 
-//Bear's Head
-fill(57,51,39); //Returning to the original body color
-ellipse(560,50,30,30); //The outer circle of the ear
-fill(235,125,252); //Creating the pink used for the inner circle of the ear
-ellipse(560,50,20,20); //Creating the inner circle of the ear
-fill(57,51,39); //Returning to the body color for the head and triangle of the nose
-beginShape();
-vertex(630,115);vertex(660,125);vertex(630,135); //Creating the nose triangle
-endShape(CLOSE);
-ellipse(560,125,150,150); //Creating the Main part of the head
-fill(235,125,252); //Returning to the pink for the button on the nose
-ellipse(660,125,20,20); //Creating the button on the nose
-fill(0); //Making the fill color black for the bear's eye
-ellipse(600,100,25,25); //Making the bear's eye
-noFill(); //Turning on noFill so the arc does not fill itself
-strokeWeight(5); //Making the arc for the mouth bigger
-arc(607,135,95,92,PI/2,PI,OPEN); //Creating the arc for the mouth
-
-//Bear's Tail
-strokeWeight(0); //Returning the weight of the strokes to its minimum
-stroke(0); //Making the lines of the tail black
-fill(162,109,8); //Returning to the color of the triangle shape on the back for the tail
-beginShape();
-vertex(28,150);vertex(84,100);vertex(84,125);vertex(28,175); //Creating the Rectangular Part of the tail
-endShape(CLOSE);
-arc(28,164,5,25,PI/2,PI/2+PI); //Creating the arc to close off the tail and give it, its circular tip
-stroke(162,109,8); //Making the strokes the same color as the tail
-line(28,150,28,175); //Adding a line where the arc splits from the rectangular part
+}
