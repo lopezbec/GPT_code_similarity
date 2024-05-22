@@ -6,7 +6,7 @@ You can download the code and open them in Processing to see the actual similari
 - ‘Bear1’ is the original code of a bear
 - ‘Bear 1_smalldiff’  is the same as Bear1 but I just deleted some lines and changed some color
 - ‘Beardifferent’ is a completely different code that generated something similar
--‘House’ is an original code of a house
+- ‘House’ is an original code of a house
 
 
 To run the code you can click below, but you will need to create a OpenAI account and generate some keys (unfortunately, the API is no longer free, so you will need to  put in some funds for it to work)
